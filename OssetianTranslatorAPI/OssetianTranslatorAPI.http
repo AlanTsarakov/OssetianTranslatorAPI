@@ -1,0 +1,6 @@
+@OssetianTranslatorAPI_HostAddress = http://localhost:5098
+
+GET {{OssetianTranslatorAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
