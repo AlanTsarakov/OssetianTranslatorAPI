@@ -1,6 +1,11 @@
 @OssetianTranslatorAPI_HostAddress = http://localhost:5098
 
-GET {{OssetianTranslatorAPI_HostAddress}}/weatherforecast/
-Accept: application/json
+POST {{OssetianTranslatorAPI_HostAddress}}/api/translate-image
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
-###
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="test.jpg"
+Content-Type: image/jpeg
+
+< /path/to/your/test-image.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
